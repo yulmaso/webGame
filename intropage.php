@@ -12,10 +12,6 @@ if(!isset($_SESSION["session_username"])) {
 		//echo "<p class=\"error\">" . "MESSAGE: ". "ОТКРЫВАЕТСЯ ИГРА" . "</p>";
 		header("location:myGame/index.php");
 	}
-
-	if(isset($_POST['refreshTable'])){
-		
-	}
 ?>
 
 
@@ -25,7 +21,6 @@ if(!isset($_SESSION["session_username"])) {
 	<p><a href="logout.php">Выход</a> здесь!</p>
 	<form action="" id="buttonform" method="post"name="loginform">
 		<p class="submit"><input class="button" name="play"type= "submit" value="ИГРАТЬ"></p>
-		<p class="submit"><input class="playbutton" name="refreshTable"type= "submit" value="Обновить таблицу"></p>
 	</form>
 </div>
 
